@@ -19,6 +19,7 @@ possiblechoices.forEach((possiblechoice) =>
 
 function generateComputerChoice() {
   const randomNum = Math.floor(Math.random() * possiblechoices.length); // possiblechoices.length = 3;
+  
   if (randomNum === 1) {
     computerchoice = "🐧";
   }
@@ -36,6 +37,15 @@ function generateComputerChoice() {
   }
   if (randomNum === 6) {
     computerchoice = "🦢";
+  }
+  if (randomNum === 7) {
+    computerchoice = "🦔";
+  }
+  if (randomNum === 8) {
+    computerchoice = "🦭";
+  }
+  if (randomNum === 9) {
+    computerchoice = "🦖";
   }
   computerchoicedisplay.innerHTML = computerchoice;
 }
